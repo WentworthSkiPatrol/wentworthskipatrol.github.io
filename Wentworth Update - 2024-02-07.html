@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office"><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <title>MOSAICO Responsive Email Designer</title>
+  
+  <style type="text/css">
+    body{ margin: 0; padding: 0; }
+    img{ border: 0px; display: block; }
+
+    .socialLinks{ font-size: 6px; }
+    .socialLinks a{
+      display: inline-block;
+    }
+
+    .long-text p{ margin: 1em 0px; }
+    .long-text p:last-child{ margin-bottom: 0px; }
+    .long-text p:first-child{ margin-top: 0px; }
+  </style>
+  <style type="text/css">
+    /* yahoo, hotmail */
+    .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div{ line-height: 100%; }
+    .yshortcuts a{ border-bottom: none !important; }
+    .vb-outer{ min-width: 0 !important; }
+    .RMsgBdy, .ExternalClass{
+      width: 100%;
+      background-color: #3f3f3f;
+      background-color: #A6192E}
+
+    /* outlook/office365 add buttons outside not-linked images and safari have 2px margin */
+    [o365] button{ margin: 0 !important; }
+
+    /* outlook */
+    table{ mso-table-rspace: 0pt; mso-table-lspace: 0pt; }
+    #outlook a{ padding: 0; }
+    img{ outline: none; text-decoration: none; border: none; -ms-interpolation-mode: bicubic; }
+    a img{ border: none; }
+
+    @media screen and (max-width: 600px) {
+      table.vb-container, table.vb-row{
+        width: 95% !important;
+      }
+
+      .mobile-hide{ display: none !important; }
+      .mobile-textcenter{ text-align: center !important; }
+
+      .mobile-full{ 
+        width: 100% !important;
+        max-width: none !important;
+      }
+    }
+    /* previously used also screen and (max-device-width: 600px) but Yahoo Mail doesn't support multiple queries */
+  </style>
+  <style type="text/css">
+    
+    #ko_singleArticleBlock_1 .links-color a, #ko_singleArticleBlock_1 .links-color a:link, #ko_singleArticleBlock_1 .links-color a:visited, #ko_singleArticleBlock_1 .links-color a:hover{
+      color: #3f3f3f;
+      color: #2C2A29;
+      text-decoration: underline
+    }
+    
+    #ko_singleArticleBlock_2 .links-color a, #ko_singleArticleBlock_2 .links-color a:link, #ko_singleArticleBlock_2 .links-color a:visited, #ko_singleArticleBlock_2 .links-color a:hover{
+      color: #3f3f3f;
+      color: #2C2A29;
+      text-decoration: underline
+    }
+    
+    #ko_textBlock_1 .links-color a, #ko_textBlock_1 .links-color a:link, #ko_textBlock_1 .links-color a:visited, #ko_textBlock_1 .links-color a:hover{
+      color: #3f3f3f;
+      color: #2C2A29;
+      text-decoration: underline
+    }
+    
+    #ko_sideArticleBlock_2 .links-color a, #ko_sideArticleBlock_2 .links-color a:link, #ko_sideArticleBlock_2 .links-color a:visited, #ko_sideArticleBlock_2 .links-color a:hover{
+      color: #3f3f3f;
+      color: #2C2A29;
+      text-decoration: underline
+    }
+    
+    #ko_sideArticleBlock_1 .links-color a, #ko_sideArticleBlock_1 .links-color a:link, #ko_sideArticleBlock_1 .links-color a:visited, #ko_sideArticleBlock_1 .links-color a:hover{
+      color: #3f3f3f;
+      color: #2C2A29;
+      text-decoration: underline
+    }
+    
+    #ko_sideArticleBlock_4 .links-color a, #ko_sideArticleBlock_4 .links-color a:link, #ko_sideArticleBlock_4 .links-color a:visited, #ko_sideArticleBlock_4 .links-color a:hover{
+      color: #3f3f3f;
+      color: #2C2A29;
+      text-decoration: underline
+    }
+    
+    #ko_sideArticleBlock_6 .links-color a, #ko_sideArticleBlock_6 .links-color a:link, #ko_sideArticleBlock_6 .links-color a:visited, #ko_sideArticleBlock_6 .links-color a:hover{
+      color: #3f3f3f;
+      color: #2C2A29;
+      text-decoration: underline
+    }
+    
+    # .links-color a, # .links-color a:link, # .links-color a:visited, # .links-color a:hover{
+      color: #cccccc;
+      color: #cccccc;
+      text-decoration: underline
+    }
+    </style>
+  
+</head>
+<!--[if !(gte mso 16)]-->
+<body bgcolor="#A6192E" text="#919191" alink="#cccccc" vlink="#cccccc" style="margin: 0; padding: 0; background-color: #A6192E; color: #919191;"><!--<![endif]--><center>
+
+  
+
+  <table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#A6192E" id="ko_singleArticleBlock_1" style="background-color: #A6192E">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" border="0" cellpadding="0" cellspacing="9" bgcolor="#ffffff" width="570" class="vb-row" style="border-collapse: separate; width: 100%; background-color: #ffffff; mso-cellspacing: 9px; border-spacing: 9px; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr>
+      <td align="center" valign="top" style="font-size: 0"><div style="vertical-align: top; width: 100%; max-width: 552px; -mru-width: 0px"><!--
+        --><table role="presentation" class="vb-content" border="0" cellspacing="9" cellpadding="0" style="border-collapse: separate; width: 100%; mso-cellspacing: 9px; border-spacing: 9px" width="552">
+          
+          <tbody><tr><td width="100%" valign="top" align="center" class="links-color" style="padding-bottom: 9px"><!--[if (lte ie 8)]><div style="display: inline-block; width: 534px; -mru-width: 0px"><![endif]--><img border="0" hspace="0" align="center" vspace="0" width="534" style="border: 0px; display: block; vertical-align: top; height: auto; margin: 0 auto; color: #2C2A29; font-size: 13px; font-family: Verdana, Geneva, sans-serif; width: 100%; max-width: 534px; height: auto;" src="https://mosaico.io/srv/f-a5e5vkv/img?src=https%3A%2F%2Fmosaico.io%2Ffiles%2Fa5e5vkv%2FWU-header.png&amp;method=resize&amp;params=534%2Cnull"><!--[if (lte ie 8)]></div><![endif]--></td></tr>
+          <tr>
+      <td width="100%" valign="top" align="left" style="font-weight: normal; color: #A6192E; font-size: 18px; font-family: Arial Black, Arial Black, Gadget, sans-serif; text-align: left"><span style="font-weight: normal">Wentworth Update ~ 7 Feb 2024</span></td>
+    </tr>
+          <tr><td class="long-text links-color" width="100%" valign="top" align="left" style="font-weight: normal; color: #2C2A29; font-size: 13px; font-family: Verdana, Geneva, sans-serif; text-align: left; line-height: normal"><p style="margin: 1em 0px; margin-top: 0px;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">Hello Wentworth Patrollers,</span></span></p>
+<p style="margin: 1em 0px;">Recent snowfall has exceeded all expectations, and those of us who were lucky enough to get to the hill this past weekend enjoyed some of the best conditions in years. The rest should come on out while the conditions are good!</p>
+<p style="margin: 1em 0px;">Many thanks to those of you who responded to yesterday's email and who signed up for shifts this Friday, Saturday and Sunday. Friday and Saturday are looking solid, but although we have enough people that I gave a thumbs-up to the second event (the rescheduled Slingshot Race) on Sunday, I would be happier with a couple more patrollers on the hill. PLEASE sign up if you are planning on coming out!</p>
+<p style="margin: 1em 0px;">I have added an 'Events' section below with the schedule for the year, along with requested numbers and current signups. Have a look and see what you can do to help out.&nbsp;</p>
+<p style="margin: 1em 0px;">On another note, we are looking for volunteers to act as patients during the On Patrol Clinic. The scenarios run from 12:30 - 16:30 on Saturday, March 2nd, and the 'patients' would be required an hour early, at 11:30, in order to be coached through their roles and to have moulage applied. We have one volunteer lined up and need three more. I am planning to ask the Race Club if anyone there is interested, but would appreciate any other leads or suggestions. Ages 13 and up.&nbsp;</p>
+<p style="margin: 1em 0px;"><span style="text-decoration-line: inherit;">I look forward to seeing you On Snow,</span></p>
+<p style="margin: 1em 0px; margin-bottom: 0px;"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">Alex Rhinelander&nbsp;<br>Ski Wentworth Patrol Leader<br>alex.rhinelander@skipatrol.ca&nbsp;</span></span></p></td></tr>
+          
+        
+        </tbody></table></div></td>
+    </tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+    </td></tr>
+    </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#A6192E" id="ko_buttonBlock_1" style="background-color: #A6192E">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" border="0" cellpadding="0" cellspacing="18" bgcolor="#ffffff" width="570" class="vb-container" style="border-collapse: separate; width: 100%; background-color: #ffffff; mso-cellspacing: 18px; border-spacing: 18px; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr>
+      <td valign="top" align="center"><table role="presentation" cellpadding="12" border="0" align="center" cellspacing="0" style="border-spacing: 0; mso-padding-alt: 12px 12px 12px 12px"><tbody><tr>
+        <td width="auto" valign="middle" align="center" bgcolor="#bfbfbf" style="text-align: center; font-weight: normal; padding: 12px; padding-left: 14px; padding-right: 14px; background-color: #bfbfbf; color: #3f3f3f; font-size: 22px; font-family: Arial, Helvetica, sans-serif; border-radius: 4px"><a style="text-decoration: none; font-weight: normal; color: #3f3f3f; font-size: 22px; font-family: Arial, Helvetica, sans-serif" target="_new" href="https://www.signupgenius.com/go/10C094AAEA72DA3FD0-45760664-wentworth/58116487#/">Wentworth Roster SignUp</a></td>
+      </tr></tbody></table></td>
+    </tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+    </td></tr>
+    </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#A6192E" id="ko_sideArticleBlock_2" style="background-color: #A6192E">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" border="0" cellpadding="0" cellspacing="9" bgcolor="#ffffff" width="570" class="vb-row" style="border-collapse: separate; width: 100%; background-color: #ffffff; mso-cellspacing: 9px; border-spacing: 9px; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr>
+      <td align="center" valign="top" style="font-size: 0"><div style="width: 100%; max-width: 552px; -mru-width: 0px"><!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="552"><tr><![endif]--><!--
+        --><!--
+          --><!--
+          --><!--[if (gte mso 9)|(lte ie 8)]><td align="left" valign="top" width="368"><![endif]--><!--
+      --><div class="mobile-full" style="display: inline-block; vertical-align: top; width: 100%; max-width: 368px; -mru-width: 0px; min-width: calc(66.66666666666667%); max-width: calc(100%); width: calc(304704px - 55200%)"><!--
+        --><table role="presentation" class="vb-content" border="0" cellspacing="9" cellpadding="0" width="368" align="left" style="border-collapse: separate; width: 100%; mso-cellspacing: 9px; border-spacing: 9px; -yandex-p: calc(2px - 3%)">
+          
+            <tbody><tr>
+      <td width="100%" valign="top" align="left" style="font-weight: normal; color: #A6192E; font-size: 18px; font-family: Arial Black, Arial Black, Gadget, sans-serif; text-align: left"><span style="font-weight: normal">Events</span></td>
+    </tr>
+            <tr><td class="long-text links-color" width="100%" valign="top" align="left" style="font-weight: normal; color: #2C2A29; font-size: 13px; font-family: Verdana, Geneva, sans-serif; text-align: left; line-height: normal"><p style="margin: 1em 0px; margin-top: 0px;">Here is our current upcoming event listing, along with the current numbers signed up and needed. As you can see, we need a few more this Sunday and lots more later in the month.&nbsp;<strong>Please help out if and when you can!</strong></p>
+<ul>
+<li><strong>Fri Feb 9:</strong> <strong>Atlantic Cup</strong> (9am - 3pm, 4 of 4 signed up)<br><strong></strong></li>
+<li><strong>Sun 11 Feb:</strong> <strong>SNS Grom</strong> (9am-3pm, 2 of 4 signed up); <strong>Slingshot</strong> (9am-3pm, 3 of 4 signed up)</li>
+<li><strong>Tue 13 Feb: High school race regionals</strong>&nbsp;(1 signup)<br><strong></strong></li>
+<li><strong>Sat 17 Feb: FNS/SNS Big Air</strong> (10am-3:30pm, 1 of 4 signed up)</li>
+<li><strong>Sun 18 Feb: FNS/SNS Slopestyle</strong> (10am-3:30pm, 1 of 4 signed up)<br><strong></strong></li>
+<li><strong>Tue 20 Feb: High school race regionals</strong> (1 signup)<br><strong></strong></li>
+<li><strong>Fri 23 Feb: ANS Rolland Brunner</strong>, 1/6 signed up<br><strong></strong></li>
+<li><strong>Sat 24 Feb: ANS Rolland Brunner</strong>, 2/6 signed up<br><strong></strong></li>
+<li><strong>Sun 25 Feb: ANS Rolland Brunner</strong>, 2/6 signed up<br><strong></strong></li>
+<li><strong>Sun 3 Mar: FNS Moguls</strong> (9am-3:30pm, 0 / 4 signed up)<br><strong></strong></li>
+<li><strong>Fri 22 Mar: ANS Byrne Cup</strong> (9am-3:30pm, 0 / 4 signed up)</li>
+</ul></td></tr>
+            
+          
+        </tbody></table><!--
+      --></div><!--[if (gte mso 9)|(lte ie 8)]></td><![endif]--><!--
+          --><!--[if (gte mso 9)|(lte ie 8)]><td align="left" valign="top" width="184" style="; "><![endif]--><!--
+      --><div class="mobile-full" style="display: inline-block; vertical-align: top; width: 100%; max-width: 184px; -mru-width: 0px; min-width: calc(33.333333333333336%); max-width: calc(100%); width: calc(304704px - 55200%)"><!--
+        --><table role="presentation" class="vb-content" border="0" cellspacing="9" cellpadding="0" width="184" align="left" style="border-collapse: separate; width: 100%; mso-cellspacing: 9px; border-spacing: 9px; -yandex-p: calc(2px - 3%)">
+          
+            <tbody><tr><td width="100%" valign="top" align="center" class="links-color"><!--[if (lte ie 8)]><div style="display: inline-block; width: 166px; -mru-width: 0px"><![endif]--><img border="0" hspace="0" align="center" vspace="0" width="166" style="border: 0px; display: block; vertical-align: top; height: auto; margin: 0 auto; color: #2C2A29; font-size: 13px; font-family: Verdana, Geneva, sans-serif; width: 100%; max-width: 166px; height: auto;" src="https://mosaico.io/srv/f-a5e5vkv/img?src=https%3A%2F%2Fmosaico.io%2Ffiles%2Fa5e5vkv%2Fdylanracing.jpg&amp;method=resize&amp;params=166%2Cnull"><!--[if (lte ie 8)]></div><![endif]--></td></tr>
+          
+        </tbody></table><!--
+      --></div><!--[if (gte mso 9)|(lte ie 8)]></td><![endif]--><!--
+        --><!--
+      --><!--[if (gte mso 9)|(lte ie 8)]></tr></table><![endif]--></div></td>
+    </tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+    </td></tr>
+    </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#A6192E" id="ko_sideArticleBlock_1" style="background-color: #A6192E">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" border="0" cellpadding="0" cellspacing="9" bgcolor="#ffffff" width="570" class="vb-row" style="border-collapse: separate; width: 100%; background-color: #ffffff; mso-cellspacing: 9px; border-spacing: 9px; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr>
+      <td align="center" valign="top" style="font-size: 0"><div style="width: 100%; max-width: 552px; -mru-width: 0px"><!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="552"><tr><![endif]--><!--
+        --><!--
+          --><!--
+          --><!--[if (gte mso 9)|(lte ie 8)]><td align="left" valign="top" width="368"><![endif]--><!--
+      --><div class="mobile-full" style="display: inline-block; vertical-align: top; width: 100%; max-width: 368px; -mru-width: 0px; min-width: calc(66.66666666666667%); max-width: calc(100%); width: calc(304704px - 55200%)"><!--
+        --><table role="presentation" class="vb-content" border="0" cellspacing="9" cellpadding="0" width="368" align="left" style="border-collapse: separate; width: 100%; mso-cellspacing: 9px; border-spacing: 9px; -yandex-p: calc(2px - 3%)">
+          
+            <tbody><tr>
+      <td width="100%" valign="top" align="left" style="font-weight: normal; color: #A6192E; font-size: 18px; font-family: Arial Black, Arial Black, Gadget, sans-serif; text-align: left"><span style="font-weight: normal">International Ski Patrol Day</span></td>
+    </tr>
+            <tr><td class="long-text links-color" width="100%" valign="top" align="left" style="font-weight: normal; color: #2C2A29; font-size: 13px; font-family: Verdana, Geneva, sans-serif; text-align: left; line-height: normal"><p style="margin: 1em 0px; margin-bottom: 0px; margin-top: 0px;">The 3rd annual International Ski Patrol Day is coming up on Saturday, February 10th. Please help us celebrate by coming to Ski Wentworth that day. It would be wonderful to have a large crew of patrollers on the hill. We'll do a group photo at the morning meeting in front of the new Top Hut. There will be a tent set up with Pace Penguin colouring books and hot chocolate to give away between 10:30am and 2:30pm. We'll pass around a sign-up sheet for anyone willing to do a half-hour shift at the tent. There is a Pace Penguin costume and we are looking for someone (or more than one) to wear it that day, either at the tent display, while skiing, or both! Please add a comment in SUG if you will be patrolling that day and are willing to help out and email Jennifer Furlong at jennifer.furlong@skipatrol.ca to let her know your availability. Thanks!</p></td></tr>
+            
+          
+        </tbody></table><!--
+      --></div><!--[if (gte mso 9)|(lte ie 8)]></td><![endif]--><!--
+          --><!--[if (gte mso 9)|(lte ie 8)]><td align="left" valign="top" width="184" style="; "><![endif]--><!--
+      --><div class="mobile-full" style="display: inline-block; vertical-align: top; width: 100%; max-width: 184px; -mru-width: 0px; min-width: calc(33.333333333333336%); max-width: calc(100%); width: calc(304704px - 55200%)"><!--
+        --><table role="presentation" class="vb-content" border="0" cellspacing="9" cellpadding="0" width="184" align="left" style="border-collapse: separate; width: 100%; mso-cellspacing: 9px; border-spacing: 9px; -yandex-p: calc(2px - 3%)">
+          
+            <tbody><tr><td width="100%" valign="top" align="center" class="links-color"><!--[if (lte ie 8)]><div style="display: inline-block; width: 166px; -mru-width: 0px"><![endif]--><img border="0" hspace="0" align="center" vspace="0" width="166" style="border: 0px; display: block; vertical-align: top; height: auto; margin: 0 auto; color: #2C2A29; font-size: 13px; font-family: Verdana, Geneva, sans-serif; width: 100%; max-width: 166px; height: auto;" src="https://mosaico.io/srv/f-a5e5vkv/img?src=https%3A%2F%2Fmosaico.io%2Ffiles%2Fa5e5vkv%2Fpace-penguin.png&amp;method=resize&amp;params=166%2Cnull"><!--[if (lte ie 8)]></div><![endif]--></td></tr>
+          
+        </tbody></table><!--
+      --></div><!--[if (gte mso 9)|(lte ie 8)]></td><![endif]--><!--
+        --><!--
+      --><!--[if (gte mso 9)|(lte ie 8)]></tr></table><![endif]--></div></td>
+    </tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+    </td></tr>
+    </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#A6192E" id="ko_singleArticleBlock_2" style="background-color: #A6192E">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" border="0" cellpadding="0" cellspacing="9" bgcolor="#ffffff" width="570" class="vb-row" style="border-collapse: separate; width: 100%; background-color: #ffffff; mso-cellspacing: 9px; border-spacing: 9px; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr>
+      <td align="center" valign="top" style="font-size: 0"><div style="vertical-align: top; width: 100%; max-width: 552px; -mru-width: 0px"><!--
+        --><table role="presentation" class="vb-content" border="0" cellspacing="9" cellpadding="0" style="border-collapse: separate; width: 100%; mso-cellspacing: 9px; border-spacing: 9px" width="552">
+          
+          <tbody><tr><td width="100%" valign="top" align="center" class="links-color" style="padding-bottom: 9px"><!--[if (lte ie 8)]><div style="display: inline-block; width: 534px; -mru-width: 0px"><![endif]--><img border="0" hspace="0" align="center" vspace="0" width="534" style="border: 0px; display: block; vertical-align: top; height: auto; margin: 0 auto; color: #2C2A29; font-size: 13px; font-family: Verdana, Geneva, sans-serif; width: 100%; max-width: 534px; height: auto;" src="https://mosaico.io/srv/f-a5e5vkv/img?src=https%3A%2F%2Fmosaico.io%2Ffiles%2Fa5e5vkv%2FSki-Patrol-4164.jpeg&amp;method=resize&amp;params=534%2Cnull"><!--[if (lte ie 8)]></div><![endif]--></td></tr>
+          <tr>
+      <td width="100%" valign="top" align="left" style="font-weight: normal; color: #A6192E; font-size: 18px; font-family: Arial Black, Arial Black, Gadget, sans-serif; text-align: left"><span style="font-weight: normal">Atlantic East On Patrol Clinic</span></td>
+    </tr>
+          <tr><td class="long-text links-color" width="100%" valign="top" align="left" style="font-weight: normal; color: #2C2A29; font-size: 13px; font-family: Verdana, Geneva, sans-serif; text-align: left; line-height: normal"><p style="margin: 1em 0px; margin-top: 0px;"><strong>Friday, Mar 1: &nbsp;</strong></p>
+<ul>
+<li>19:30 – Meet &amp; Greet @ Ducky's&nbsp;</li>
+</ul>
+<p style="margin: 1em 0px;"><strong><span style="text-decoration: line-through;">World Telemark Day</span> Saturday, Mar 2: &nbsp;</strong></p>
+<ul>
+<li><strong>09:00 – 12:00:&nbsp;Ski/Ride &amp; Pre-Toboggan Skills&nbsp;</strong><br>This session is intended to let people work on the fundamental skills in the CSP On-Snow curriculum with a focus on the skills that provide a solid foundation for toboggan handling. &nbsp;</li>
+<li><strong>08:30 – 12:00: Review of On-Snow Skills for Instructors<br></strong>This session is for the On-Snow Instructors to answer questions and review the finer points of On-Snow Skills for both skiers and snowboarders.&nbsp;</li>
+<li><strong>12:30 – 16:30: On-Snow Scenario Showcase</strong><br>Work on a series of first aid and rescue scenarios on the hill as part of a team.  The teams will be announced at the Friday evening Meet &amp; Greet.&nbsp; You could call this a “First Aid Competition” but don’t stress too much about it. 😉 The goal is to learn from each other, pick up some tips and tricks, and have fun! &nbsp;<br><strong>19:00 – late: Food, BEvERages, awards, and prizes</strong><br>Celebrate the team who totally rocked the On-Snow Scenario Showcase and get yourself some sweet door prizes.&nbsp;</li>
+</ul>
+<p style="margin: 1em 0px;"><strong>Sunday, Mar 3: &nbsp;</strong></p>
+<ul>
+<li><strong>08:30 – 11:00: Managing Critically Ill Patients in a toboggan</strong><br>This session will focus on working through some strategies for managing critically ill patients, based on the concepts outlined in Appendix A “CPR in a toboggan” of the On Snow manual. &nbsp;</li>
+<li><strong>11:00 – 12:00: Review of On-Snow Skills for Instructors (continued)</strong>&nbsp;</li>
+<li><strong>13:00 – 16:30: Basics of Rope Work - awareness</strong><br>This session will review some ways that rope work could be incorporated into rescue scenarios in the ski patrol environment. The goal is to give people a taste of rope work. If you walk away from this session hungry for more, consider talking to your Patrol Leader about the activities and training appropriate&nbsp;to&nbsp;your hill.&nbsp;This session will not qualify&nbsp;you to perform any rope rescue techniques.&nbsp;Proper training is required&nbsp;before you do any of this “in the wild”.&nbsp;</li>
+</ul>
+<p style="margin: 1em 0px;"><strong>Accommodations:</strong> You are responsible for&nbsp;booking your own accommodations for the duration of the event,&nbsp;but&nbsp;we have a great deal nearby to Wentworth at the Debert Hospitality Center: $69.95 + tax per night and $14.95 + tax for a full cooked breakfast.&nbsp;If we book a minimum of 10 rooms, they will give us our own private lodge so we would all be together. It has a large common area&nbsp;with a fireplace and an outside hot tub.&nbsp;Call 902.662.4074 (during regular business hours M-F)&nbsp;or email&nbsp;dhc@eastlink.ca&nbsp;to book.&nbsp;<em>Don’t&nbsp;forget to mention that you’re&nbsp;with the Canadian Ski Patrol event!&nbsp;</em></p>
+<p style="margin: 1em 0px;"><strong>Travel Funding:</strong> Both the NL Zone and NS Zone have set aside some money to help offset the cost of patrollers travelling to this event. Funding is limited and will not cover full costs for everyone&nbsp;but you can reach out if some travel funding would help you attend. The contact for patrollers to request funds from NL Zone is Megan&nbsp;(megan.taylor@skipatrol.ca) and&nbsp;from NS Zone is Andrew (andrew.sancton@skipatrol.ca).&nbsp;<em>Reach out to one of these fine folks before January 28th&nbsp;to request funding.</em>&nbsp;This will let them confirm funding &amp; amounts for everyone&nbsp;before the registration deadline.&nbsp;</p>
+<p style="margin: 1em 0px;"><strong>Toboggan Handling:</strong>&nbsp;For risk management reasons, all sessions involving the use of rescue toboggans assume that people handling&nbsp;toboggans&nbsp;have a current Canadian Ski Patrol On-Snow qualification. If you don’t&nbsp;have a current Canadian Ski Patrol On-Snow qualification, you’re&nbsp;more than welcome to join the session to observe, listen, ask questions, etc.&nbsp;</p>
+<p style="margin: 1em 0px; margin-bottom: 0px;">This event is open to all regular members of the CSP, so talk it up with your buddies and let's all have a time at Ski Wentworth! Registration is open until February 4th. <span style="text-decoration: line-through;">CLICK BELOW or visit https://forms.office.com/r/huGJ0UidBm to register for the event.</span></p></td></tr>
+          
+        
+        </tbody></table></div></td>
+    </tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+    </td></tr>
+    </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#A6192E" id="ko_titleBlock_1" style="background-color: #A6192E">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff" width="570" class="vb-row" style="border-collapse: separate; width: 100%; background-color: #ffffff; mso-cellspacing: 0px; border-spacing: 0px; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr>
+      <td align="center" valign="top" style="font-size: 0; padding: 0 9px"><div style="vertical-align: top; width: 100%; max-width: 552px; -mru-width: 0px"><!--
+        --><table role="presentation" class="vb-content" border="0" cellspacing="9" cellpadding="0" style="border-collapse: separate; width: 100%; mso-cellspacing: 9px; border-spacing: 9px" width="552">
+          
+          <tbody><tr>
+      <td width="100%" valign="top" align="center" style="font-weight: normal; color: #a6192e; font-size: 22px; font-family: Arial Black, Arial Black, Gadget, sans-serif; text-align: center"><span style="font-weight: normal"><strong>Blasts from the Past</strong></span></td>
+    </tr>
+        
+        </tbody></table></div></td>
+    </tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+    </td></tr>
+    </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#A6192E" id="ko_textBlock_1" style="background-color: #A6192E">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" border="0" cellpadding="0" cellspacing="18" bgcolor="#ffffff" width="570" class="vb-container" style="border-collapse: separate; width: 100%; background-color: #ffffff; mso-cellspacing: 18px; border-spacing: 18px; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr><td class="long-text links-color" width="100%" valign="top" align="left" style="font-weight: normal; color: #2C2A29; font-size: 13px; font-family: Verdana, Geneva, sans-serif; text-align: left; line-height: normal"><p style="margin: 1em 0px; margin-bottom: 0px; margin-top: 0px;">The posts below fall into the 'in case you missed it' department—they're repeats from past issues. But please read on, there may be updates to items (newest changes are at the top, look for <span style="color: #a6192e;">UPDATES</span>&nbsp;or&nbsp;<span style="text-decoration: line-through;">strikethroughs</span>).</p></td></tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+    </td></tr>
+    </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#A6192E" id="ko_sideArticleBlock_4" style="background-color: #A6192E">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" border="0" cellpadding="0" cellspacing="9" bgcolor="#ffffff" width="570" class="vb-row" style="border-collapse: separate; width: 100%; background-color: #ffffff; mso-cellspacing: 9px; border-spacing: 9px; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr>
+      <td align="center" valign="top" style="font-size: 0"><div style="width: 100%; max-width: 552px; -mru-width: 0px"><!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="552"><tr><![endif]--><!--
+        --><!--
+          --><!--[if (gte mso 9)|(lte ie 8)]><td align="left" valign="top" width="184"><![endif]--><!--
+      --><div class="mobile-full" style="display: inline-block; vertical-align: top; width: 100%; max-width: 184px; -mru-width: 0px; min-width: calc(33.333333333333336%); max-width: calc(100%); width: calc(304704px - 55200%)"><!--
+        --><table role="presentation" class="vb-content" border="0" cellspacing="9" cellpadding="0" width="184" align="left" style="border-collapse: separate; width: 100%; mso-cellspacing: 9px; border-spacing: 9px; -yandex-p: calc(2px - 3%)">
+          
+            <tbody><tr><td width="100%" valign="top" align="center" class="links-color"><!--[if (lte ie 8)]><div style="display: inline-block; width: 166px; -mru-width: 0px"><![endif]--><img border="0" hspace="0" align="center" vspace="0" width="166" style="border: 0px; display: block; vertical-align: top; height: auto; margin: 0 auto; color: #2C2A29; font-size: 13px; font-family: Verdana, Geneva, sans-serif; width: 100%; max-width: 166px; height: auto;" src="https://mosaico.io/srv/f-a5e5vkv/img?src=https%3A%2F%2Fmosaico.io%2Ffiles%2Fa5e5vkv%2FonPatrol01b-sm.png&amp;method=resize&amp;params=166%2Cnull"><!--[if (lte ie 8)]></div><![endif]--></td></tr>
+          
+        </tbody></table><!--
+      --></div><!--[if (gte mso 9)|(lte ie 8)]></td><![endif]--><!--
+          --><!--[if (gte mso 9)|(lte ie 8)]><td align="left" valign="top" width="368"><![endif]--><!--
+      --><div class="mobile-full" style="display: inline-block; vertical-align: top; width: 100%; max-width: 368px; -mru-width: 0px; min-width: calc(66.66666666666667%); max-width: calc(100%); width: calc(304704px - 55200%)"><!--
+        --><table role="presentation" class="vb-content" border="0" cellspacing="9" cellpadding="0" width="368" align="left" style="border-collapse: separate; width: 100%; mso-cellspacing: 9px; border-spacing: 9px; -yandex-p: calc(2px - 3%)">
+          
+            <tbody><tr>
+      <td width="100%" valign="top" align="left" style="font-weight: normal; color: #A6192E; font-size: 18px; font-family: Arial Black, Arial Black, Gadget, sans-serif; text-align: left"><span style="font-weight: normal">Rostering &amp; Training</span></td>
+    </tr>
+            <tr><td class="long-text links-color" width="100%" valign="top" align="left" style="font-weight: normal; color: #2C2A29; font-size: 13px; font-family: Verdana, Geneva, sans-serif; text-align: left; line-height: normal"><p style="margin: 1em 0px; margin-top: 0px;">The standard expectation for Wentworth patrollers is <strong>5 weekend/event shifts</strong> (around 35 - 40 hours), with no more than 3 of those being Saturdays. (Note that you could do 3 Saturday shifts plus 2 Saturday events if you wished.) <span style="text-decoration-line: inherit;">But we are flexible—if this doesn't work for you, reach out to Alex (alex.rhinelander@skipatrol.ca) to arrange an alternate schedule.</span></p>
+<p style="margin: 1em 0px; margin-bottom: 0px;">Training will commence with an instructors-only session the morning of Jan 6 followed by new patroller training that afternoon. Following the 6th, instructors will be able to sign up to provide training whenever they will be available.&nbsp;</p></td></tr>
+            
+          
+        </tbody></table><!--
+      --></div><!--[if (gte mso 9)|(lte ie 8)]></td><![endif]--><!--
+          --><!--
+        --><!--
+      --><!--[if (gte mso 9)|(lte ie 8)]></tr></table><![endif]--></div></td>
+    </tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+    </td></tr>
+    </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#A6192E" id="ko_sideArticleBlock_6" style="background-color: #A6192E">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" border="0" cellpadding="0" cellspacing="9" bgcolor="#ffffff" width="570" class="vb-row" style="border-collapse: separate; width: 100%; background-color: #ffffff; mso-cellspacing: 9px; border-spacing: 9px; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr>
+      <td align="center" valign="top" style="font-size: 0"><div style="width: 100%; max-width: 552px; -mru-width: 0px"><!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="552"><tr><![endif]--><!--
+        --><!--
+          --><!--
+          --><!--[if (gte mso 9)|(lte ie 8)]><td align="left" valign="top" width="368"><![endif]--><!--
+      --><div class="mobile-full" style="display: inline-block; vertical-align: top; width: 100%; max-width: 368px; -mru-width: 0px; min-width: calc(66.66666666666667%); max-width: calc(100%); width: calc(304704px - 55200%)"><!--
+        --><table role="presentation" class="vb-content" border="0" cellspacing="9" cellpadding="0" width="368" align="left" style="border-collapse: separate; width: 100%; mso-cellspacing: 9px; border-spacing: 9px; -yandex-p: calc(2px - 3%)">
+          
+            <tbody><tr>
+      <td width="100%" valign="top" align="left" style="font-weight: normal; color: #A6192E; font-size: 18px; font-family: Arial Black, Arial Black, Gadget, sans-serif; text-align: left"><span style="font-weight: normal">Radio Procedures</span></td>
+    </tr>
+            <tr><td class="long-text links-color" width="100%" valign="top" align="left" style="font-weight: normal; color: #2C2A29; font-size: 13px; font-family: Verdana, Geneva, sans-serif; text-align: left; line-height: normal"><p style="margin: 1em 0px; margin-top: 0px;">At Wentworth, calls related to first aid or patroller availability should now be made to <em>“Ski Patrol Dispatch.”</em></p>
+<p style="margin: 1em 0px;"><span style="color: #a6192e;">On weekend days before sweep, these calls are answered</span><br><span style="color: #a6192e;">&nbsp; 1. by the patroller on bump, or</span><br><span style="color: #a6192e;">&nbsp; 2. by the Team Lead, if there is no bump. </span></p>
+<p style="margin: 1em 0px;">On nights and weekdays, Mountain Safety will answer these calls. The time of all calls related to incidents are logged by a lift attendant at the top of one of the chair lifts.</p>
+<p style="margin: 1em 0px;">When initiating a call, ALWAYS say the name of the station you are calling first, followed by ‘this is’ and your own name, e.g. <em>“Ski Patrol Dispatch, this is patroller John.”</em></p>
+<p style="margin: 1em 0px; margin-bottom: 0px;">For more details and some sample conversations, see the document <a href="https://drive.google.com/file/d/1swlE9E9DwKi5vU9e4ELjkcc7enOdewoi/view?usp=sharing" target="_blank" rel="noopener" style="color: #3f3f3f; color: #2C2A29; text-decoration: underline;">Wentworth: CSP Protocols</a>.&nbsp;</p></td></tr>
+            
+          
+        </tbody></table><!--
+      --></div><!--[if (gte mso 9)|(lte ie 8)]></td><![endif]--><!--
+          --><!--[if (gte mso 9)|(lte ie 8)]><td align="left" valign="top" width="184" style="; "><![endif]--><!--
+      --><div class="mobile-full" style="display: inline-block; vertical-align: top; width: 100%; max-width: 184px; -mru-width: 0px; min-width: calc(33.333333333333336%); max-width: calc(100%); width: calc(304704px - 55200%)"><!--
+        --><table role="presentation" class="vb-content" border="0" cellspacing="9" cellpadding="0" width="184" align="left" style="border-collapse: separate; width: 100%; mso-cellspacing: 9px; border-spacing: 9px; -yandex-p: calc(2px - 3%)">
+          
+            <tbody><tr><td width="100%" valign="top" align="center" class="links-color"><!--[if (lte ie 8)]><div style="display: inline-block; width: 166px; -mru-width: 0px"><![endif]--><img border="0" hspace="0" align="center" vspace="0" width="166" style="border: 0px; display: block; vertical-align: top; height: auto; margin: 0 auto; color: #2C2A29; font-size: 13px; font-family: Verdana, Geneva, sans-serif; width: 100%; max-width: 166px; height: auto;" src="https://mosaico.io/srv/f-a5e5vkv/img?src=https%3A%2F%2Fmosaico.io%2Ffiles%2Fa5e5vkv%2Fradio_2.jpeg&amp;method=resize&amp;params=166%2Cnull"><!--[if (lte ie 8)]></div><![endif]--></td></tr>
+          
+        </tbody></table><!--
+      --></div><!--[if (gte mso 9)|(lte ie 8)]></td><![endif]--><!--
+        --><!--
+      --><!--[if (gte mso 9)|(lte ie 8)]></tr></table><![endif]--></div></td>
+    </tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+    </td></tr>
+    </tbody></table>
+
+  
+    <!-- footerBlock -->
+    <table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#A6192E" id="" style="background-color: #A6192E">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+    <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; width: 100%; mso-cellspacing: 0px; border-spacing: 0px; max-width: 570px; -mru-width: 0px" width="570" class="vb-row">
+        
+      <tbody><tr>
+      <td align="center" valign="top" style="font-size: 0; padding: 0 9px"><div style="vertical-align: top; width: 100%; max-width: 552px; -mru-width: 0px"><!--
+        --><table role="presentation" class="vb-content" border="0" cellspacing="9" cellpadding="0" style="border-collapse: separate; width: 100%; mso-cellspacing: 9px; border-spacing: 9px" width="552">
+          
+        <tbody><tr><td class="long-text links-color" width="100%" valign="top" align="center" style="font-weight: normal; color: #919191; font-size: 13px; font-family: Arial, Helvetica, sans-serif; text-align: center"><p style="margin: 1em 0px; margin-top: 0px; text-align: left;"><span style="background-color: #a6192e;"><span style="color: #ffffff;">Copyright ©</span><span style="color: #ffffff;"> 202</span><span style="color: #ffffff;">4</span><span style="color: #ffffff;"> Canadian Ski Patrol, All rights reserved.</span></span></p>
+<p style="margin: 1em 0px; margin-bottom: 0px; text-align: left;"><span style="background-color: #a6192e; color: #ffffff;">You are receiving this email because you are a member of the Canadian Ski Patrol who patrols at Ski Wentworth. To unsubscribe, please reply and request to be&nbsp;removed from&nbsp;our mailing list.</span></p></td></tr>
+        <tr><td width="100%" valign="top" align="center" style="font-weight: normal; color: #ffffff; font-size: 13px; font-family: Arial, Helvetica, sans-serif; text-align: center"><a href="[unsubscribe_link]" style="color: #ffffff; text-decoration: underline" target="_new"><br data-mce-bogus="1"></a></td></tr>
+        <tr style="text-align: center"><td width="100%" valign="top" align="center" class="links-color" style="text-align: center"><!--[if (lte ie 8)]><div style="display: inline-block; width: 170px; -mru-width: 0px"><![endif]--><a style="display: inline-block" target="_new" href="https://mosaico.io/?footerbadge"><img alt="MOSAICO Responsive Email Designer" border="0" hspace="0" align="center" vspace="0" width="170" src="https://mosaico.io/img/mosaico-badge.gif" style="border: 0px; display: block; vertical-align: top; height: auto; margin: 0 auto; color: #3f3f3f; font-size: 13px; font-family: Arial, Helvetica, sans-serif; width: 100%; max-width: 170px;"></a><!--[if (lte ie 8)]></div><![endif]--></td></tr>
+      
+        </tbody></table></div></td>
+    </tr>
+    
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+  </td></tr>
+    </tbody></table>
+    <!-- /footerBlock -->
+    
+</center><!--[if !(gte mso 16)]--></body><!--<![endif]--></html>
