@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office"><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <title>MOSAICO Responsive Email Designer</title>
+  
+  
+  <style type="text/css">
+    body{ margin: 0; padding: 0; }
+
+    .socialLinks{ font-size: 6px; }
+    .socialLinks a{
+      display: inline-block;
+    }
+
+    .long-text p{ margin: 1em 0px; }
+    .long-text p:last-child{ margin-bottom: 0px; }
+    .long-text p:first-child{ margin-top: 0px; }
+
+    /* :not([data-emoji]) is like a noop to hide this rule in Gmail to workaround emojification bug in Gmail: it is not really used by Gmail and this is currently equivalent to img:not(a) */
+    img:not([data-emoji]){ border: 0px; display: block; }
+  </style>
+  <style type="text/css">
+    /* yahoo, hotmail */
+    .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div{ line-height: 100%; }
+    .yshortcuts a{ border-bottom: none !important; }
+    .vb-outer{ min-width: 0 !important; }
+    .RMsgBdy, .ExternalClass{
+      width: 100%;
+      background-color: #3f3f3f;
+      background-color: #A6192E}
+
+    /* outlook/office365 add buttons outside not-linked images and safari have 2px margin */
+    [o365] button{ margin: 0 !important; }
+
+    /* outlook */
+    table{ mso-table-rspace: 0pt; mso-table-lspace: 0pt; }
+    #outlook a{ padding: 0; }
+    img{ outline: none; text-decoration: none; border: none; -ms-interpolation-mode: bicubic; }
+    a img{ border: none; }
+
+    @media screen and (max-width: 600px) {
+      table.vb-row{
+        width: 95% !important;
+      }
+
+      .mobile-hide{ display: none !important; }
+      .mobile-textcenter{ text-align: center !important; }
+
+      .mobile-full{ 
+        width: 100% !important;
+        max-width: none !important;
+      }
+    }
+    
+    /* samsung email workaround */
+    @media screen and (max-width: 384px) {
+      .mail-message-content{ width: 414px !important; }
+    }
+  </style>
+  <style type="text/css">
+    
+    #ko_singleArticleBlock_1 .links-color a, #ko_singleArticleBlock_1 .links-color a:link, #ko_singleArticleBlock_1 .links-color a:visited, #ko_singleArticleBlock_1 .links-color a:hover{
+      color: #3f3f3f;
+      color: #2C2A29;
+      text-decoration: underline
+    }
+    
+    #ko_textBlock_1 .links-color a, #ko_textBlock_1 .links-color a:link, #ko_textBlock_1 .links-color a:visited, #ko_textBlock_1 .links-color a:hover{
+      color: #3f3f3f;
+      color: #2C2A29;
+      text-decoration: underline
+    }
+    
+    #ko_sideArticleBlock_1 .links-color a, #ko_sideArticleBlock_1 .links-color a:link, #ko_sideArticleBlock_1 .links-color a:visited, #ko_sideArticleBlock_1 .links-color a:hover{
+      color: #3f3f3f;
+      color: #2C2A29;
+      text-decoration: underline
+    }
+    
+    #ko_sideArticleBlock_3 .links-color a, #ko_sideArticleBlock_3 .links-color a:link, #ko_sideArticleBlock_3 .links-color a:visited, #ko_sideArticleBlock_3 .links-color a:hover{
+      color: #3f3f3f;
+      color: #2C2A29;
+      text-decoration: underline
+    }
+    
+    #ko_sideArticleBlock_4 .links-color a, #ko_sideArticleBlock_4 .links-color a:link, #ko_sideArticleBlock_4 .links-color a:visited, #ko_sideArticleBlock_4 .links-color a:hover{
+      color: #3f3f3f;
+      color: #2C2A29;
+      text-decoration: underline
+    }
+    
+    #ko_sideArticleBlock_6 .links-color a, #ko_sideArticleBlock_6 .links-color a:link, #ko_sideArticleBlock_6 .links-color a:visited, #ko_sideArticleBlock_6 .links-color a:hover{
+      color: #3f3f3f;
+      color: #2C2A29;
+      text-decoration: underline
+    }
+    
+    #ko_sideArticleBlock_5 .links-color a, #ko_sideArticleBlock_5 .links-color a:link, #ko_sideArticleBlock_5 .links-color a:visited, #ko_sideArticleBlock_5 .links-color a:hover{
+      color: #3f3f3f;
+      color: #2C2A29;
+      text-decoration: underline
+    }
+    
+    #ko_sideArticleBlock_2 .links-color a, #ko_sideArticleBlock_2 .links-color a:link, #ko_sideArticleBlock_2 .links-color a:visited, #ko_sideArticleBlock_2 .links-color a:hover{
+      color: #3f3f3f;
+      color: #2C2A29;
+      text-decoration: underline
+    }
+    
+    # .links-color a, # .links-color a:link, # .links-color a:visited, # .links-color a:hover{
+      color: #cccccc;
+      color: #cccccc;
+      text-decoration: underline
+    }
+    
+    #ko_imageBlock_1 a, #ko_imageBlock_1 a:link, #ko_imageBlock_1 a:visited, #ko_imageBlock_1 a:hover{
+      color: #3f3f3f;
+      color: #2C2A29;
+      text-decoration: underline
+    }
+    </style>
+  
+</head>
+<!--[if !(gte mso 15)]-->
+<body bgcolor="#A6192E" text="#919191" alink="#cccccc" vlink="#cccccc" style="margin: 0; padding: 0; background-color: #A6192E; color: #919191;"><!--<![endif]--><center>
+
+  
+
+  <table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#A6192E" id="ko_titleBlock2_1" style="background-color: #A6192E">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" class="vb-row" border="0" cellpadding="0" cellspacing="9" bgcolor="#A6192E" width="570" style="border-collapse: collapse; width: 100%; background-color: #A6192E; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr>
+      <td align="center" valign="top" style="font-size: 0; padding: 0 9px; padding-top: 13px; padding-bottom: 13px"><div style="vertical-align: top; width: 100%; max-width: 552px; -mru-width: 0px"><!--
+        --><table role="presentation" border="0" cellspacing="9" cellpadding="0" style="border-collapse: collapse; width: 100%" width="552">
+          
+          <tbody><tr>
+      <td width="100%" valign="top" align="center" style="font-weight: normal; color: #A6192E; font-size: 22px; font-family: Arial, Helvetica, sans-serif; text-align: center; padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px"><span style="font-weight: normal">&nbsp;</span></td>
+    </tr>
+        
+        </tbody></table></div></td>
+    </tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+    </td></tr>
+    </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#A6192E" id="ko_singleArticleBlock_1" style="background-color: #A6192E">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" class="vb-row" border="0" cellpadding="0" cellspacing="9" bgcolor="#ffffff" width="570" style="border-collapse: collapse; width: 100%; background-color: #ffffff; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr>
+      <td align="center" valign="top" style="font-size: 0; padding: 0 9px; padding-top: 13px; padding-bottom: 13px"><div style="vertical-align: top; width: 100%; max-width: 552px; -mru-width: 0px"><!--
+        --><table role="presentation" border="0" cellspacing="9" cellpadding="0" style="border-collapse: collapse; width: 100%" width="552">
+          
+          <tbody><tr><td width="100%" valign="top" align="center" class="links-color" style="padding-bottom: 8px; padding: 9px; padding-top: 5px; padding-bottom: 13px"><!--[if (lte ie 8)]><div style="display: inline-block; width: 534px; -mru-width: 0px"><![endif]--><img border="0" hspace="0" align="center" vspace="0" width="534" style="border: 0px; display: block; vertical-align: top; height: auto; margin: 0 auto; color: #2C2A29; font-size: 13px; font-family: Arial, Helvetica, sans-serif; width: 100%; max-width: 534px; height: auto;" src="img/csp-logo-ww-update-resizex-1068.png"><!--[if (lte ie 8)]></div><![endif]--></td></tr>
+          
+          <tr><td class="long-text links-color" width="100%" valign="top" align="left" style="font-weight: normal; color: #2C2A29; font-size: 13px; font-family: Arial, Helvetica, sans-serif; padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px; text-align: left; line-height: normal"><h2><span style="color: #a6192e;">Wentworth Update ~ December 10</span></h2>
+<p style="margin: 1em 0px;">Hello Wentworth Patrollers,</p>
+<p style="margin: 1em 0px;">We had a very successful Lodge Day last weekend, with 57 patrollers attending (a record?) and another 5 sending their regrets. I especially enjoyed presentations from Mike Luckett of the NS Medical Call Centre on ways we are looking at to better integrate the CSP and the EHS system and from Patrick Fok on a Penthrox (pain management) trial he will be carrying out this winter. If you neither attended or let me know you couldn't make it, please fire off an email to <a href="mailto:alex.rhinelander@skipatrol.ca" target="_blank" rel="noopener" style="color: #3f3f3f; color: #2C2A29; text-decoration: underline;">alex.rhinelander@skipatrol.ca</a> so I know that you are intending to patrol this winter.&nbsp;</p>
+<p style="margin: 1em 0px;">The hill is looking great, with both a natural snow covering and significant piles of man-made snow. As anyone who has seen the videos of early-season Explosion turns (videos on the NSZ FB page) can imagine, things are looking good for an early start to the year!!!</p>
+<p style="margin: 1em 0px;">If you missed Lodge Day please carefully read this document, which has Wentworth-specific policies and procedures, and be sure to tell your team lead on the first day you patrol, so they can further review with you any needed protocols. Also see below for a few more to-dos :-).&nbsp;</p>
+<p style="margin: 1em 0px;">I am looking forward to skiing/riding with all of you, and LET IT SNOW!</p>
+<p style="margin: 1em 0px;">Cheers,<br>Alex</p>
+<p style="margin: 1em 0px; margin-bottom: 0px;">Alex Rhinelander<br>Ski Wentworth Patrol Leader<br><a href="mailto:alex.rhinelander@skipatrol.ca" target="_blank" rel="noopener" style="color: #3f3f3f; color: #2C2A29; text-decoration: underline;">alex.rhinelander@skipatrol.ca</a></p></td></tr>
+          <tr>
+      <td valign="top" align="center" style="padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px"><table role="presentation" cellpadding="6" border="0" align="center" cellspacing="0" style="border-spacing: 0; mso-padding-alt: 6px 18px 6px 18px; margin-top: 2px"><tbody><tr>
+        <td width="auto" valign="middle" align="center" bgcolor="#bfbfbf" style="text-align: center; font-weight: normal; padding: 6px; padding-left: 18px; padding-right: 18px; background-color: #bfbfbf; color: #3f3f3f; font-size: 18px; font-family: Arial, Helvetica, sans-serif; border-radius: 4px"><a style="text-decoration: none; font-weight: normal; color: #3f3f3f; font-size: 18px; font-family: Arial, Helvetica, sans-serif" target="_new" href="https://www.signupgenius.com/go/10C094AAEA72DA3FD0-51394135-wentworth#/">Wentworth Roster SignUp</a></td>
+      </tr></tbody></table></td>
+    </tr>
+        
+        </tbody></table></div></td>
+    </tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+    </td></tr>
+    </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#A6192E" id="ko_sideArticleBlock_1" style="background-color: #A6192E">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" class="vb-row" border="0" cellpadding="0" cellspacing="9" bgcolor="#ffffff" width="570" style="border-collapse: collapse; width: 100%; background-color: #ffffff; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr>
+      <td align="center" valign="top" style="font-size: 0; padding: 0 9px; padding-top: 13px; padding-bottom: 13px"><table dir="" role="presentation" border="0" cellspacing="0" cellpadding="0" width="100%"><tbody><tr><td align="center" valign="top" dir="ltr" style="direction: ltr; border-collapse: collapse"><div style="width: 100%; max-width: 552px; -mru-width: 0px"><!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="552"><tr><![endif]--><!--
+        --><!--
+          --><!--[if (gte mso 9)|(lte ie 8)]><td align="left" valign="top" width="184"><![endif]--><!--
+      --><div class="mobile-full" style="display: inline-block; vertical-align: top; width: 100%; max-width: 184px; -mru-width: 0px; min-width: calc(33.333333333333336%); max-width: calc(100%); width: calc(304704px - 55200%)"><!--
+        --><table role="presentation" border="0" cellspacing="9" cellpadding="0" width="184" dir="ltr" align="left" style="border-collapse: collapse; width: 100%; direction: ltr; -yandex-p: calc(2px - 3%)">
+          
+            <tbody><tr><td width="100%" valign="top" align="center" class="links-color" style="padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px"><!--[if (lte ie 8)]><div style="display: inline-block; width: 166px; -mru-width: 0px"><![endif]--><img border="0" hspace="0" align="center" vspace="0" width="166" style="border: 0px; display: block; vertical-align: top; height: auto; margin: 0 auto; color: #2C2A29; font-size: 13px; font-family: Arial, Helvetica, sans-serif; width: 100%; max-width: 166px; height: auto;" src="img/padding-resizex-332.png"><!--[if (lte ie 8)]></div><![endif]--></td></tr>
+          
+        </tbody></table><!--
+      --></div><!--[if (gte mso 9)|(lte ie 8)]></td><![endif]--><!--
+          --><!--[if (gte mso 9)|(lte ie 8)]><td align="left" valign="top" width="368"><![endif]--><!--
+      --><div class="mobile-full" style="display: inline-block; vertical-align: top; width: 100%; max-width: 368px; -mru-width: 0px; min-width: calc(66.66666666666667%); max-width: calc(100%); width: calc(304704px - 55200%)"><!--
+        --><table role="presentation" border="0" cellspacing="9" cellpadding="0" width="368" dir="ltr" align="left" style="border-collapse: collapse; width: 100%; direction: ltr; -yandex-p: calc(2px - 3%)">
+          
+            <tbody><tr>
+      <td width="100%" valign="top" align="left" style="font-weight: normal; color: #A6192E; font-size: 18px; font-family: Arial, Helvetica, sans-serif; padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px; text-align: left"><span style="font-weight: normal">Lodge Day ~ Updates from the Hill</span></td>
+    </tr>
+            <tr><td class="long-text links-color" width="100%" valign="top" align="left" style="font-weight: normal; color: #2C2A29; font-size: 13px; font-family: Arial, Helvetica, sans-serif; padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px; text-align: left; line-height: normal"><p style="margin: 1em 0px; margin-top: 0px;">Leslie was away, so Gregor Wilson filled us in on news from the hill.&nbsp;</p>
+<p style="margin: 1em 0px; margin-bottom: 0px;"><strong>Off-Season Improvements</strong> There has been a lot of work done on the Frisbee Golf course, as well as improvements to the biking trails. All this benefits us, as the glades are in better shape than they have been in years! Other trail improvements include widening Lower Robbins and the entrance to Black Fly.&nbsp;</p></td></tr>
+            
+          
+        </tbody></table><!--
+      --></div><!--[if (gte mso 9)|(lte ie 8)]></td><![endif]--><!--
+        --><!--
+      --><!--[if (gte mso 9)|(lte ie 8)]></tr></table><![endif]--></div></td></tr></tbody></table></td>
+    </tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+    </td></tr>
+    </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#A6192E" id="ko_sideArticleBlock_3" style="background-color: #A6192E">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" class="vb-row" border="0" cellpadding="0" cellspacing="9" bgcolor="#ffffff" width="570" style="border-collapse: collapse; width: 100%; background-color: #ffffff; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr>
+      <td align="center" valign="top" style="font-size: 0; padding: 0 9px; padding-top: 13px; padding-bottom: 13px"><table dir="" role="presentation" border="0" cellspacing="0" cellpadding="0" width="100%"><tbody><tr><td align="center" valign="top" dir="rtl" style="direction: rtl; border-collapse: collapse"><div style="width: 100%; max-width: 552px; -mru-width: 0px"><!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="552"><tr><![endif]--><!--
+        --><!--
+          --><!--[if (gte mso 9)|(lte ie 8)]><td align="left" valign="top" width="184"><![endif]--><!--
+      --><div class="mobile-full" style="display: inline-block; vertical-align: top; width: 100%; max-width: 184px; -mru-width: 0px; min-width: calc(33.333333333333336%); max-width: calc(100%); width: calc(304704px - 55200%)"><!--
+        --><table role="presentation" border="0" cellspacing="9" cellpadding="0" width="184" dir="ltr" align="left" style="border-collapse: collapse; width: 100%; direction: ltr; -yandex-p: calc(2px - 3%)">
+          
+            <tbody><tr><td width="100%" valign="top" align="center" class="links-color" style="padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px"><!--[if (lte ie 8)]><div style="display: inline-block; width: 166px; -mru-width: 0px"><![endif]--><img border="0" hspace="0" align="center" vspace="0" width="166" style="border: 0px; display: block; vertical-align: top; height: auto; margin: 0 auto; color: #2C2A29; font-size: 13px; font-family: Arial, Helvetica, sans-serif; width: 100%; max-width: 166px; height: auto;" src="img/screenshot_2025-12-09_at_10_11_37___pm-resizex-332.png"><!--[if (lte ie 8)]></div><![endif]--></td></tr>
+          
+        </tbody></table><!--
+      --></div><!--[if (gte mso 9)|(lte ie 8)]></td><![endif]--><!--
+          --><!--[if (gte mso 9)|(lte ie 8)]><td align="left" valign="top" width="368"><![endif]--><!--
+      --><div class="mobile-full" style="display: inline-block; vertical-align: top; width: 100%; max-width: 368px; -mru-width: 0px; min-width: calc(66.66666666666667%); max-width: calc(100%); width: calc(304704px - 55200%)"><!--
+        --><table role="presentation" border="0" cellspacing="9" cellpadding="0" width="368" dir="ltr" align="left" style="border-collapse: collapse; width: 100%; direction: ltr; -yandex-p: calc(2px - 3%)">
+          
+            <tbody><tr>
+      <td width="100%" valign="top" align="left" style="font-weight: normal; color: #A6192E; font-size: 18px; font-family: Arial, Helvetica, sans-serif; padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px; text-align: left"><span style="font-weight: normal">Lodge Day ~ Patrol Notes</span></td>
+    </tr>
+            <tr><td class="long-text links-color" width="100%" valign="top" align="left" style="font-weight: normal; color: #2C2A29; font-size: 13px; font-family: Arial, Helvetica, sans-serif; padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px; text-align: left; line-height: normal"><p style="margin: 1em 0px; margin-top: 0px;"><strong>This year's Leadership Team</strong></p>
+<ul>
+<li>Saturday Team Leads: Judy Robertson, Paul Saulnier &amp; Stefan Juckes</li>
+<li>Sunday Team Leads: Alex Holmes, Alex Rhinelander &amp; Kevin Waller</li>
+<li>Competitions Coordinator: Jamie Duncan with Adrian Spencer &amp; Mike Huggins</li>
+<li>Events Coordinator: Jennifer Furlong with Kathy Wells</li>
+</ul></td></tr>
+            
+          
+        </tbody></table><!--
+      --></div><!--[if (gte mso 9)|(lte ie 8)]></td><![endif]--><!--
+        --><!--
+      --><!--[if (gte mso 9)|(lte ie 8)]></tr></table><![endif]--></div></td></tr></tbody></table></td>
+    </tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+    </td></tr>
+    </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#A6192E" id="ko_sideArticleBlock_4" style="background-color: #A6192E">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" class="vb-row" border="0" cellpadding="0" cellspacing="9" bgcolor="#ffffff" width="570" style="border-collapse: collapse; width: 100%; background-color: #ffffff; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr>
+      <td align="center" valign="top" style="font-size: 0; padding: 0 9px; padding-top: 13px; padding-bottom: 13px"><table dir="" role="presentation" border="0" cellspacing="0" cellpadding="0" width="100%"><tbody><tr><td align="center" valign="top" dir="ltr" style="direction: ltr; border-collapse: collapse"><div style="width: 100%; max-width: 552px; -mru-width: 0px"><!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="552"><tr><![endif]--><!--
+        --><!--
+          --><!--[if (gte mso 9)|(lte ie 8)]><td align="left" valign="top" width="184"><![endif]--><!--
+      --><div class="mobile-full" style="display: inline-block; vertical-align: top; width: 100%; max-width: 184px; -mru-width: 0px; min-width: calc(33.333333333333336%); max-width: calc(100%); width: calc(304704px - 55200%)"><!--
+        --><table role="presentation" border="0" cellspacing="9" cellpadding="0" width="184" dir="ltr" align="left" style="border-collapse: collapse; width: 100%; direction: ltr; -yandex-p: calc(2px - 3%)">
+          
+            <tbody><tr><td width="100%" valign="top" align="center" class="links-color" style="padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px"><!--[if (lte ie 8)]><div style="display: inline-block; width: 166px; -mru-width: 0px"><![endif]--><img border="0" hspace="0" align="center" vspace="0" width="166" style="border: 0px; display: block; vertical-align: top; height: auto; margin: 0 auto; color: #2C2A29; font-size: 13px; font-family: Arial, Helvetica, sans-serif; width: 100%; max-width: 166px; height: auto;" src="img/screenshot_2025-12-09_at_10_36_16___pm-resizex-332.png"><!--[if (lte ie 8)]></div><![endif]--></td></tr>
+          
+        </tbody></table><!--
+      --></div><!--[if (gte mso 9)|(lte ie 8)]></td><![endif]--><!--
+          --><!--[if (gte mso 9)|(lte ie 8)]><td align="left" valign="top" width="368"><![endif]--><!--
+      --><div class="mobile-full" style="display: inline-block; vertical-align: top; width: 100%; max-width: 368px; -mru-width: 0px; min-width: calc(66.66666666666667%); max-width: calc(100%); width: calc(304704px - 55200%)"><!--
+        --><table role="presentation" border="0" cellspacing="9" cellpadding="0" width="368" dir="ltr" align="left" style="border-collapse: collapse; width: 100%; direction: ltr; -yandex-p: calc(2px - 3%)">
+          
+            <tbody><tr>
+      <td width="100%" valign="top" align="left" style="font-weight: normal; color: #A6192E; font-size: 18px; font-family: Arial, Helvetica, sans-serif; padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px; text-align: left"><span style="font-weight: normal">Important Tasks</span></td>
+    </tr>
+            <tr><td class="long-text links-color" width="100%" valign="top" align="left" style="font-weight: normal; color: #2C2A29; font-size: 13px; font-family: Arial, Helvetica, sans-serif; padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px; text-align: left; line-height: normal"><ol>
+<li>Scott Nelson mentioned that a number of patrollers have not completed all parts of their requal. Please log in to Yeti and confirm that y<span style="text-decoration-line: inherit;">our </span><span style="text-decoration-line: inherit;"><strong>First-Aid (Written)</strong>, </span><span style="text-decoration-line: inherit;"><strong>First-Aid (Skills)</strong>, </span><span style="text-decoration-line: inherit;"><strong>First-Aid (Diagnosis)</strong> and </span><span style="text-decoration-line: inherit;"><strong>CPR/AED (HCP)</strong>&nbsp;statuses are all </span><strong>Valid</strong><span style="text-decoration-line: inherit;">. If you need help ccompleting any of these, contact Scott at <a href="mailto:scott.nelson@skipatrol.ca" target="_blank" rel="noopener" style="color: #3f3f3f; color: #2C2A29; text-decoration: underline;">scott.nelson@skipatrol.ca</a>&nbsp;<br><br></span></li>
+<li><span style="text-decoration-line: inherit;">All patrollers must sign a CRC / Communications Authorization annually. If you did not do this at Lodge Day, please download it from SignupGenius, and send me a photo of the signed form.</span></li>
+</ol></td></tr>
+            
+          
+        </tbody></table><!--
+      --></div><!--[if (gte mso 9)|(lte ie 8)]></td><![endif]--><!--
+        --><!--
+      --><!--[if (gte mso 9)|(lte ie 8)]></tr></table><![endif]--></div></td></tr></tbody></table></td>
+    </tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+    </td></tr>
+    </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#A6192E" id="ko_sideArticleBlock_6" style="background-color: #A6192E">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" class="vb-row" border="0" cellpadding="0" cellspacing="9" bgcolor="#ffffff" width="570" style="border-collapse: collapse; width: 100%; background-color: #ffffff; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr>
+      <td align="center" valign="top" style="font-size: 0; padding: 0 9px; padding-top: 13px; padding-bottom: 13px"><table dir="" role="presentation" border="0" cellspacing="0" cellpadding="0" width="100%"><tbody><tr><td align="center" valign="top" dir="rtl" style="direction: rtl; border-collapse: collapse"><div style="width: 100%; max-width: 552px; -mru-width: 0px"><!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="552"><tr><![endif]--><!--
+        --><!--
+          --><!--[if (gte mso 9)|(lte ie 8)]><td align="left" valign="top" width="184"><![endif]--><!--
+      --><div class="mobile-full" style="display: inline-block; vertical-align: top; width: 100%; max-width: 184px; -mru-width: 0px; min-width: calc(33.333333333333336%); max-width: calc(100%); width: calc(304704px - 55200%)"><!--
+        --><table role="presentation" border="0" cellspacing="9" cellpadding="0" width="184" dir="ltr" align="left" style="border-collapse: collapse; width: 100%; direction: ltr; -yandex-p: calc(2px - 3%)">
+          
+            <tbody><tr><td width="100%" valign="top" align="center" class="links-color" style="padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px"><!--[if (lte ie 8)]><div style="display: inline-block; width: 166px; -mru-width: 0px"><![endif]--><img border="0" hspace="0" align="center" vspace="0" width="166" style="border: 0px; display: block; vertical-align: top; height: auto; margin: 0 auto; color: #2C2A29; font-size: 13px; font-family: Arial, Helvetica, sans-serif; width: 100%; max-width: 166px; height: auto;" src="img/onpatrol05_copy-resizex-332.png"><!--[if (lte ie 8)]></div><![endif]--></td></tr>
+          
+        </tbody></table><!--
+      --></div><!--[if (gte mso 9)|(lte ie 8)]></td><![endif]--><!--
+          --><!--[if (gte mso 9)|(lte ie 8)]><td align="left" valign="top" width="368"><![endif]--><!--
+      --><div class="mobile-full" style="display: inline-block; vertical-align: top; width: 100%; max-width: 368px; -mru-width: 0px; min-width: calc(66.66666666666667%); max-width: calc(100%); width: calc(304704px - 55200%)"><!--
+        --><table role="presentation" border="0" cellspacing="9" cellpadding="0" width="368" dir="ltr" align="left" style="border-collapse: collapse; width: 100%; direction: ltr; -yandex-p: calc(2px - 3%)">
+          
+            <tbody><tr>
+      <td width="100%" valign="top" align="left" style="font-weight: normal; color: #A6192E; font-size: 18px; font-family: Arial, Helvetica, sans-serif; padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px; text-align: left"><span style="font-weight: normal">Rostering &amp; Training</span></td>
+    </tr>
+            <tr><td class="long-text links-color" width="100%" valign="top" align="left" style="font-weight: normal; color: #2C2A29; font-size: 13px; font-family: Arial, Helvetica, sans-serif; padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px; text-align: left; line-height: normal"><p style="margin: 1em 0px; margin-bottom: 0px; margin-top: 0px;">The standard expectation for Wentworth patrollers is <strong>5 weekend/event shifts</strong> (around 35 - 40 hours), with no more than 3 of those being Saturdays. (Note that you could do 3 Saturday shifts plus 2 Saturday events if you wished.) But we are flexible—if this doesn't work for you, reach out to Alex (alex.rhinelander@skipatrol.ca) to arrange an alternate schedule.</p></td></tr>
+            
+          
+        </tbody></table><!--
+      --></div><!--[if (gte mso 9)|(lte ie 8)]></td><![endif]--><!--
+        --><!--
+      --><!--[if (gte mso 9)|(lte ie 8)]></tr></table><![endif]--></div></td></tr></tbody></table></td>
+    </tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+    </td></tr>
+    </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#A6192E" id="ko_sideArticleBlock_5" style="background-color: #A6192E">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" class="vb-row" border="0" cellpadding="0" cellspacing="9" bgcolor="#ffffff" width="570" style="border-collapse: collapse; width: 100%; background-color: #ffffff; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr>
+      <td align="center" valign="top" style="font-size: 0; padding: 0 9px; padding-top: 13px; padding-bottom: 13px"><table dir="" role="presentation" border="0" cellspacing="0" cellpadding="0" width="100%"><tbody><tr><td align="center" valign="top" dir="ltr" style="direction: ltr; border-collapse: collapse"><div style="width: 100%; max-width: 552px; -mru-width: 0px"><!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="552"><tr><![endif]--><!--
+        --><!--
+          --><!--[if (gte mso 9)|(lte ie 8)]><td align="left" valign="top" width="138"><![endif]--><!--
+      --><div class="mobile-full" style="display: inline-block; vertical-align: top; width: 100%; max-width: 138px; -mru-width: 0px; min-width: calc(25%); max-width: calc(100%); width: calc(304704px - 55200%)"><!--
+        --><table role="presentation" border="0" cellspacing="9" cellpadding="0" width="138" dir="ltr" align="left" style="border-collapse: collapse; width: 100%; direction: ltr; -yandex-p: calc(2px - 3%)">
+          
+            <tbody><tr><td width="100%" valign="top" align="center" class="links-color" style="padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px"><!--[if (lte ie 8)]><div style="display: inline-block; width: 120px; -mru-width: 0px"><![endif]--><img border="0" hspace="0" align="center" vspace="0" width="120" style="border: 0px; display: block; vertical-align: top; height: auto; margin: 0 auto; color: #2C2A29; font-size: 13px; font-family: Arial, Helvetica, sans-serif; width: 100%; max-width: 120px; height: auto;" src="img/sug_app-resizex-240.jpeg"><!--[if (lte ie 8)]></div><![endif]--></td></tr>
+          
+        </tbody></table><!--
+      --></div><!--[if (gte mso 9)|(lte ie 8)]></td><![endif]--><!--
+          --><!--[if (gte mso 9)|(lte ie 8)]><td align="left" valign="top" width="414"><![endif]--><!--
+      --><div class="mobile-full" style="display: inline-block; vertical-align: top; width: 100%; max-width: 414px; -mru-width: 0px; min-width: calc(75%); max-width: calc(100%); width: calc(304704px - 55200%)"><!--
+        --><table role="presentation" border="0" cellspacing="9" cellpadding="0" width="414" dir="ltr" align="left" style="border-collapse: collapse; width: 100%; direction: ltr; -yandex-p: calc(2px - 3%)">
+          
+            <tbody><tr>
+      <td width="100%" valign="top" align="left" style="font-weight: normal; color: #A6192E; font-size: 18px; font-family: Arial, Helvetica, sans-serif; padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px; text-align: left"><span style="font-weight: normal">SignUpGenius</span></td>
+    </tr>
+            <tr><td class="long-text links-color" width="100%" valign="top" align="left" style="font-weight: normal; color: #2C2A29; font-size: 13px; font-family: Arial, Helvetica, sans-serif; padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px; text-align: left; line-height: normal"><ul>
+<li>SUG is now open for patrollers to sign up for their 5 shifts, with Patrol and some Event slots posted. More Event slots and Training slots will be added soon—keep checking in!</li>
+<li>Everything—rosters, training, competitions, socials—is on the same signup.</li>
+<li>There are 10 patrol slots each day, but our target is 6-7 patrollers on weekends and 2 on weekdays.</li>
+<li>Sign-ups are most useful when made well in advance.</li>
+<li>There's an app for that!</li>
+</ul></td></tr>
+            
+          
+        </tbody></table><!--
+      --></div><!--[if (gte mso 9)|(lte ie 8)]></td><![endif]--><!--
+        --><!--
+      --><!--[if (gte mso 9)|(lte ie 8)]></tr></table><![endif]--></div></td></tr></tbody></table></td>
+    </tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+    </td></tr>
+    </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#A6192E" id="ko_sideArticleBlock_2" style="background-color: #A6192E">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" class="vb-row" border="0" cellpadding="0" cellspacing="9" bgcolor="#ffffff" width="570" style="border-collapse: collapse; width: 100%; background-color: #ffffff; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr>
+      <td align="center" valign="top" style="font-size: 0; padding: 0 9px; padding-top: 13px; padding-bottom: 13px"><table dir="" role="presentation" border="0" cellspacing="0" cellpadding="0" width="100%"><tbody><tr><td align="center" valign="top" dir="rtl" style="direction: rtl; border-collapse: collapse"><div style="width: 100%; max-width: 552px; -mru-width: 0px"><!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="552"><tr><![endif]--><!--
+        --><!--
+          --><!--[if (gte mso 9)|(lte ie 8)]><td align="left" valign="top" width="184"><![endif]--><!--
+      --><div class="mobile-full" style="display: inline-block; vertical-align: top; width: 100%; max-width: 184px; -mru-width: 0px; min-width: calc(33.333333333333336%); max-width: calc(100%); width: calc(304704px - 55200%)"><!--
+        --><table role="presentation" border="0" cellspacing="9" cellpadding="0" width="184" dir="ltr" align="left" style="border-collapse: collapse; width: 100%; direction: ltr; -yandex-p: calc(2px - 3%)">
+          
+            <tbody><tr><td width="100%" valign="top" align="center" class="links-color" style="padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px"><!--[if (lte ie 8)]><div style="display: inline-block; width: 166px; -mru-width: 0px"><![endif]--><img border="0" hspace="0" align="center" vspace="0" width="166" style="border: 0px; display: block; vertical-align: top; height: auto; margin: 0 auto; color: #2C2A29; font-size: 13px; font-family: Arial, Helvetica, sans-serif; width: 100%; max-width: 166px; height: auto;" src="img/ski-pass-cropped-resizex-332.jpeg"><!--[if (lte ie 8)]></div><![endif]--></td></tr>
+          
+        </tbody></table><!--
+      --></div><!--[if (gte mso 9)|(lte ie 8)]></td><![endif]--><!--
+          --><!--[if (gte mso 9)|(lte ie 8)]><td align="left" valign="top" width="368"><![endif]--><!--
+      --><div class="mobile-full" style="display: inline-block; vertical-align: top; width: 100%; max-width: 368px; -mru-width: 0px; min-width: calc(66.66666666666667%); max-width: calc(100%); width: calc(304704px - 55200%)"><!--
+        --><table role="presentation" border="0" cellspacing="9" cellpadding="0" width="368" dir="ltr" align="left" style="border-collapse: collapse; width: 100%; direction: ltr; -yandex-p: calc(2px - 3%)">
+          
+            <tbody><tr>
+      <td width="100%" valign="top" align="left" style="font-weight: normal; color: #A6192E; font-size: 18px; font-family: Arial, Helvetica, sans-serif; padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px; text-align: left"><span style="font-weight: normal">Passes</span></td>
+    </tr>
+            <tr><td class="long-text links-color" width="100%" valign="top" align="left" style="font-weight: normal; color: #2C2A29; font-size: 13px; font-family: Arial, Helvetica, sans-serif; padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px; text-align: left; line-height: normal"><p style="margin: 1em 0px; margin-top: 0px;">Wentworth is again using an online waiver and photo submission form for creating ski patrol passes. If you submit your information on <a href="https://backend3.botrow.com/Went-ImportPasses2025.html" target="_blank" rel="noopener" style="color: #3f3f3f; color: #2C2A29; text-decoration: underline;">this web form</a> you will receive an email which lets you upload your preferred photo and sign the waiver. You will then be able to pick up your pass at the hill.</p>
+<p style="margin: 1em 0px;">Please Note: Wentworth season passes are provided to patrollers who have Wentworth as their primary hill as well as patrollers who intend to patrol a significant number of days at Wentworth. If you are a member of the latter group and would like to receive a pass, please reach out to Alex in order to have your name added to the list of those eligible.&nbsp;</p>
+<p style="margin: 1em 0px; margin-bottom: 0px;">We are happy to provide day passes to those who intend to patrol more occasionally.</p></td></tr>
+            <tr>
+      <td valign="top" align="center" style="padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px"><table role="presentation" cellpadding="6" border="0" align="center" cellspacing="0" style="border-spacing: 0; mso-padding-alt: 6px 18px 6px 18px; margin-top: 2px"><tbody><tr>
+        <td width="auto" valign="middle" align="center" bgcolor="#bfbfbf" style="text-align: center; font-weight: normal; padding: 6px; padding-left: 18px; padding-right: 18px; background-color: #bfbfbf; color: #3f3f3f; font-size: 13px; font-family: Arial, Helvetica, sans-serif; border-radius: 4px"><a style="text-decoration: none; font-weight: normal; color: #3f3f3f; font-size: 13px; font-family: Arial, Helvetica, sans-serif" target="_new" href="https://backend3.botrow.com/Went-ImportPasses2025.html">Season Pass SignUp</a></td>
+      </tr></tbody></table></td>
+    </tr>
+          
+        </tbody></table><!--
+      --></div><!--[if (gte mso 9)|(lte ie 8)]></td><![endif]--><!--
+        --><!--
+      --><!--[if (gte mso 9)|(lte ie 8)]></tr></table><![endif]--></div></td></tr></tbody></table></td>
+    </tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+    </td></tr>
+    </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#A6192E" id="ko_imageBlock_1" style="background-color: #A6192E">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" class="vb-row" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff" width="570" style="border-collapse: collapse; width: 100%; background-color: #ffffff; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr><td width="100%" valign="top" align="center" class="links-color"><!--[if (lte ie 8)]><div style="display: inline-block; width: 570px; -mru-width: 0px"><![endif]--><img border="0" hspace="0" align="center" vspace="0" width="570" class="mobile-full" style="border: 0px; display: block; vertical-align: top; height: auto; margin: 0 auto; color: #2C2A29; font-size: 13px; font-family: Arial, Helvetica, sans-serif; width: 100%; max-width: 570px; height: auto;" src="img/aedopclinic20240302f-resizex-1140.jpeg"><!--[if (lte ie 8)]></div><![endif]--></td></tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+      
+    </td></tr>
+    </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#A6192E" id="ko_textBlock_1" style="background-color: #A6192E">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" class="vb-row" border="0" cellpadding="0" cellspacing="9" bgcolor="#A6192E" width="570" style="border-collapse: collapse; width: 100%; background-color: #A6192E; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr>
+      <td align="center" valign="top" style="font-size: 0; padding: 0 9px; padding-top: 13px; padding-bottom: 13px"><div style="vertical-align: top; width: 100%; max-width: 552px; -mru-width: 0px"><!--
+        --><table role="presentation" border="0" cellspacing="9" cellpadding="0" style="border-collapse: collapse; width: 100%" width="552">
+          
+          <tbody><tr><td class="long-text links-color" width="100%" valign="top" align="center" style="font-weight: normal; color: #ffffff; font-size: 13px; font-family: Arial, Helvetica, sans-serif; padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px; text-align: center; line-height: normal"><p style="margin: 1em 0px; margin-top: 0px;">&nbsp;</p>
+<p style="margin: 1em 0px;">Copyright © 2025 Canadian Ski Patrol, All rights reserved.</p>
+<p style="margin: 1em 0px; margin-bottom: 0px;">You are receiving this email because you are a member of the Canadian Ski Patrol who patrols at Ski Wentworth or a friend of the Wentworth Ski Patrol. To unsubscribe, please reply and request to be removed from our mailing list.</p></td></tr>
+        
+        </tbody></table></div></td>
+    </tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+    </td></tr>
+    </tbody></table>
+
+  
+    <!-- footerBlock -->
+    <table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#A6192E" id="" style="background-color: #A6192E">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+    <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" class="vb-row" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%; max-width: 570px; -mru-width: 0px" width="570">
+        
+      <tbody><tr>
+      <td align="center" valign="top" style="font-size: 0; padding: 0 9px; padding-top: 4px; padding-bottom: 4px"><div style="vertical-align: top; width: 100%; max-width: 552px; -mru-width: 0px"><!--
+        --><table role="presentation" border="0" cellspacing="9" cellpadding="0" style="border-collapse: collapse; width: 100%" width="552">
+          
+        <tbody><tr><td class="long-text links-color" width="100%" valign="top" align="center" style="font-weight: normal; color: #919191; font-size: 13px; font-family: Arial, Helvetica, sans-serif; padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px; text-align: center"></td></tr>
+        <tr><td width="100%" valign="top" align="center" style="font-weight: normal; color: #A6192E; font-size: 13px; font-family: Arial, Helvetica, sans-serif; text-align: center; padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px"><a href="[unsubscribe_link]" style="color: #ffffff; text-decoration: none" target="_new">&nbsp;</a></td></tr>
+        <tr style="text-align: center"><td width="100%" valign="top" align="center" class="links-color" style="padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px; text-align: center"><!--[if (lte ie 8)]><div style="display: inline-block; width: 170px; -mru-width: 0px"><![endif]--><a style="display: inline-block" target="_new" href="https://mosaico.io/?footerbadge"><img alt="MOSAICO Responsive Email Designer" border="0" hspace="0" align="center" vspace="0" width="170" src="img/mosaico-badge.gif" style="border: 0px; display: block; vertical-align: top; height: auto; margin: 0 auto; color: #3f3f3f; font-size: 13px; font-family: Arial, Helvetica, sans-serif; width: 100%; max-width: 170px;"></a><!--[if (lte ie 8)]></div><![endif]--></td></tr>
+      
+        </tbody></table></div></td>
+    </tr>
+    
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+  </td></tr>
+    </tbody></table>
+    <!-- /footerBlock -->
+    
+</center><!--[if !(gte mso 15)]--></body><!--<![endif]--></html>
